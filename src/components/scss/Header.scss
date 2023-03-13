@@ -1,5 +1,10 @@
 header {
   box-shadow: 0 3px 8px rgba(68, 79, 90, 0.15);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
 
   .header-container {
     max-width: 1400px;
@@ -7,7 +12,7 @@ header {
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
-    padding: 0 2em 0 1em;
+    padding: 0 1em;
 
     h3 {
       margin: 0;
@@ -15,36 +20,126 @@ header {
       font-family: "Birthstone", cursive;
       font-size: 2.7rem;
       color: rgb(68, 79, 90);
+      min-width: fit-content;
     }
 
     nav {
-      display: flex;
-      gap: 1.8em;
-      font-size: 1.15rem;
+      display: none;
+    }
 
-      a {
-        text-decoration: none;
-        color: rgb(68, 79, 90);
-        position: relative;
-        padding: 0.3em 0.3em;
+    .sliding-menu {
+      position: fixed;
+      top: 70px;
+      right: -10em;
+      bottom: 0;
+      background-color: rgb(79, 102, 121);
+      overflow-y: auto;
+      width: 10em;
+      height: 100vh;
+      transition: right 0.5s;
+      z-index: 2;
+      padding-bottom: 2em;
+    }
 
-        &:after {
-          background: none repeat scroll 0 0 transparent;
-          bottom: 0;
-          content: "";
-          display: block;
-          height: 2px;
-          left: 50%;
-          position: absolute;
-          background: #3b3b3b;
-          transition: width 0.3s ease 0s, left 0.3s ease 0s;
-          width: 0;
-        }
-        &:hover:after {
-          width: 100%;
-          left: 0;
+    .sliding-menu.active {
+      right: 0;
+    }
+
+    .hamburger-icon {
+      height: 30px;
+      width: 38px;
+      position: relative;
+      cursor: pointer;
+      padding: 1em;
+
+      .ham-bar {
+        z-index: 2;
+        width: 70%;
+        height: 3px;
+        background-color: rgb(68, 79, 90);
+        border-radius: 25px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: transform 0.6s, opacity 0s, top 0.6s;
+      }
+
+      .bar-top {
+        top: 25%;
+      }
+
+      .bar-bottom {
+        top: 75%;
+      }
+    }
+
+    .hamburger-icon.active {
+      .bar-top {
+        transform: translate(-50%, -50%) rotate(-315deg);
+        top: 50%;
+      }
+
+      .bar-mid {
+        opacity: 0;
+      }
+
+      .bar-bottom {
+        transform: translate(-50%, -50%) rotate(-225deg);
+        top: 50%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 630px) {
+  header {
+    .header-container {
+      padding: 0 2em 0 1em;
+
+      h3 {
+        font-size: 2.7rem;
+      }
+
+      .hamburger-icon {
+        display: none;
+      }
+
+      nav {
+        display: flex;
+        gap: 1.8em;
+        font-size: 1.15rem;
+
+        a {
+          text-decoration: none;
+          color: rgb(68, 79, 90);
+          position: relative;
+          padding: 0.3em 0.3em;
+
+          &:after {
+            background: none repeat scroll 0 0 transparent;
+            bottom: 0;
+            content: "";
+            display: block;
+            height: 2px;
+            left: 50%;
+            position: absolute;
+            background: #3b3b3b;
+            transition: width 0.3s ease 0s, left 0.3s ease 0s;
+            width: 0;
+          }
+          &:hover:after {
+            width: 100%;
+            left: 0;
+          }
         }
       }
     }
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .surname-span {
+    display: none;
   }
 }
