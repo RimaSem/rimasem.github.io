@@ -1,0 +1,50 @@
+header {
+  box-shadow: 0 3px 8px rgba(68, 79, 90, 0.15);
+
+  .header-container {
+    max-width: 1400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 2em 0 1em;
+
+    h3 {
+      margin: 0;
+      padding: 0.1em;
+      font-family: "Birthstone", cursive;
+      font-size: 2.7rem;
+      color: rgb(68, 79, 90);
+    }
+
+    nav {
+      display: flex;
+      gap: 1.8em;
+      font-size: 1.15rem;
+
+      a {
+        text-decoration: none;
+        color: rgb(68, 79, 90);
+        position: relative;
+        padding: 0.3em 0.3em;
+
+        &:after {
+          background: none repeat scroll 0 0 transparent;
+          bottom: 0;
+          content: "";
+          display: block;
+          height: 2px;
+          left: 50%;
+          position: absolute;
+          background: #3b3b3b;
+          transition: width 0.3s ease 0s, left 0.3s ease 0s;
+          width: 0;
+        }
+        &:hover:after {
+          width: 100%;
+          left: 0;
+        }
+      }
+    }
+  }
+}
