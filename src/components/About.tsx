@@ -19,20 +19,23 @@ function About() {
       <div className="hidden about-wrapper">
         <h1>ABOUT ME</h1>
         <p>
-          I’m a Frontend Developer based in Marrakech, Who likes to provide
-          solutions for people's projects and businesses which it is a challenge
-          that I enjoy overcoming.
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum,
+          eligendi, odit commodi, quo totam tempora laboriosam unde eos beatae
+          tenetur perferendis temporibus a! Necessitatibus consequuntur tenetur
+          quaerat facilis dicta tempora.
         </p>
         <p>
-          I am a passionate person who pursues his dreams, who works hard and
-          who is results oriented. As a matter of fact, I constantly work on
-          improving myself seeking to achieve the best version of myself.
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum et
+          necessitatibus optio fugiat aspernatur recusandae dolore nisi pariatur
+          expedita quis maxime mollitia nulla officiis iste earum nobis eaque
+          omnis laudantium, aperiam id perspiciatis! Exercitationem.
         </p>
         <p>
-          I build websites using HTML, CSS, JavaScript, and a other frameworks
-          and libraries. I spend most days learning and building up, either
-          start it from scratch or adding some customized features and
-          functionality for outdated websites to make them shine again.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. In quam
+          soluta adipisci molestias atque aliquid tempora nemo quibusdam
+          inventore vel ullam debitis tempore nisi quisquam consequatur velit
+          veniam harum, aperiam corporis fuga! Doloribus minus aperiam nostrum
+          voluptatem, veritatis ipsum esse neque commodi?
         </p>
       </div>
       <div className="hidden skills-wrapper">
