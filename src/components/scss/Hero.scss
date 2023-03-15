@@ -31,8 +31,6 @@
     height: 150px;
 
     .headline {
-      //   line-height: 10px;
-      //   width: 330px;
       line-height: normal;
       font-size: 1.3rem;
       color: rgb(5, 100, 189);
@@ -48,6 +46,15 @@
       justify-content: center;
       gap: 1em;
       margin-top: 1.8em;
+
+      .icon {
+        cursor: pointer;
+        transition: color 0.3s;
+
+        &:hover {
+          color: rgb(5, 100, 189);
+        }
+      }
     }
   }
 }

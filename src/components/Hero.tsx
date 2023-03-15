@@ -32,10 +32,10 @@ function Hero() {
           <span ref={el} className="headline"></span>
         </p>
         <div className="contact-icons">
-          <Icon path={mdiEmail} size={1.7} />
-          <Icon path={mdiGithub} size={1.7} />
-          <Icon path={mdiLinkedin} size={1.7} />
-          <Icon path={mdiFacebookMessenger} size={1.7} />
+          <Icon className="icon" path={mdiEmail} size={1.7} />
+          <Icon className="icon" path={mdiGithub} size={1.7} />
+          <Icon className="icon" path={mdiLinkedin} size={1.7} />
+          <Icon className="icon" path={mdiFacebookMessenger} size={1.7} />
         </div>
       </div>
     </section>
