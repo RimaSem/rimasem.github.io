@@ -1,6 +1,7 @@
 .projects-container {
   margin: 0 auto;
   max-width: 1200px;
+
   h1 {
     font-family: Finger Paint, cursive;
     text-align: center;
@@ -26,11 +27,13 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+
       p {
         margin: 0 0 0.8em 0;
         text-align: center;
         font-weight: 700;
       }
+
       img {
         width: clamp(10px, 100%, 350px);
         height: 13.5em;
