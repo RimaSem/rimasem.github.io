@@ -8,7 +8,7 @@ import CVBuilderImg from "../img/cv-builder.jpg";
 
 function Projects() {
   return (
-    <section className="projects-container">
+    <section className="projects-container" id="projects">
       <h1>PROJECTS</h1>
       <div className="project-wrapper">
         <div className="project">

@@ -1,4 +1,7 @@
 header {
+  height: 4.875em;
+  display: flex;
+  justify-content: space-between;
   background-color: white;
   box-shadow: 0 3px 8px rgba(68, 79, 90, 0.15);
   position: sticky;
@@ -8,6 +11,7 @@ header {
   z-index: 1;
 
   .header-container {
+    width: 100%;
     max-width: 1400px;
     display: flex;
     align-items: center;
@@ -15,12 +19,15 @@ header {
     margin: 0 auto;
     padding: 0 1em;
 
-    h3 {
-      margin: 0;
-      padding: 0.7em;
-      font-weight: 300;
-      color: rgb(68, 79, 90);
-      min-width: fit-content;
+    a {
+      text-decoration: none;
+
+      h3 {
+        margin: 0;
+        font-weight: 300;
+        color: rgb(68, 79, 90);
+        min-width: fit-content;
+      }
     }
 
     nav {

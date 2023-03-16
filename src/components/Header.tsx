@@ -14,11 +14,13 @@ function Header() {
   return (
     <header>
       <div className="header-container">
-        <h3>
-          {"<Rima "}
-          <span className="surname-span">Šemetaitė </span>
-          {"/>"}
-        </h3>
+        <a href="#home">
+          <h3>
+            {"<Rima "}
+            <span className="surname-span">Šemetaitė </span>
+            {"/>"}
+          </h3>
+        </a>
         <div ref={slidingMenuRef} className="sliding-menu"></div>
         <div
           ref={hamburgerIconRef}
@@ -30,13 +32,13 @@ function Header() {
           <div className="ham-bar bar-bottom"></div>
         </div>
         <nav className="wide-screen-nav">
-          <a id="about-link" href="#">
+          <a id="about-link" href="#about">
             About
           </a>
-          <a id="projects-link" href="#">
+          <a id="projects-link" href="#projects">
             Projects
           </a>
-          <a id="contact-link" href="#">
+          <a id="contact-link" href="#contact">
             Contact
           </a>
         </nav>

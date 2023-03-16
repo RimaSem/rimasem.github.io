@@ -12,7 +12,7 @@ import {
 function Contact() {
   return (
     <>
-      <h1>CONTACT ME</h1>
+      <h1 id="contact">CONTACT ME</h1>
       <section className="contact-container">
         <form>
           <input

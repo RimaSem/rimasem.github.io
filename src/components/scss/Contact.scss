@@ -130,30 +130,11 @@ h1 {
 
     form {
       padding: 2em;
-
-      //   input,
-      //   textarea {
-      //     font-size: 1rem;
-      //   }
-
-      //   input {
-      //     height: 2.5em;
-      //     padding-top: 0.2em;
-      //     padding-bottom: 0.2em;
-      //   }
     }
 
     .contacts {
       flex-direction: column;
       align-self: flex-start;
-
-      .contact-info {
-        .wrapper {
-          .contact-icon {
-            // width: 1.2em;
-          }
-        }
-      }
     }
   }
 }

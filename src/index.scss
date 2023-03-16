@@ -2,13 +2,17 @@
   box-sizing: border-box;
 }
 
-body {
-  margin: 0;
-  font-family: "Raleway", sans-serif;
-  #root {
-    .App {
-      margin: 0 auto;
-      color: rgb(68, 79, 90);
+html {
+  scroll-behavior: smooth;
+
+  body {
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    #root {
+      .App {
+        margin: 0 auto;
+        color: rgb(68, 79, 90);
+      }
     }
   }
 }

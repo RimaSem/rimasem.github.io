@@ -2,12 +2,7 @@ import "./scss/Hero.scss";
 import Typed from "typed.js";
 import { useRef, useEffect } from "react";
 import { Icon } from "@mdi/react";
-import {
-  mdiEmail,
-  mdiGithub,
-  mdiLinkedin,
-  mdiFacebookMessenger,
-} from "@mdi/js";
+import { mdiEmail, mdiGithub, mdiLinkedin, mdiFacebook } from "@mdi/js";
 
 function Hero() {
   const el = useRef(null);
@@ -31,11 +26,11 @@ function Hero() {
         <p>
           <span ref={el} className="headline"></span>
         </p>
-        <div className="contact-icons">
+        <div className="contact-icons" id="about">
           <Icon className="icon" path={mdiEmail} size={1.7} />
           <Icon className="icon" path={mdiGithub} size={1.7} />
           <Icon className="icon" path={mdiLinkedin} size={1.7} />
-          <Icon className="icon" path={mdiFacebookMessenger} size={1.7} />
+          <Icon className="icon" path={mdiFacebook} size={1.7} />
         </div>
       </div>
     </section>
