@@ -27,10 +27,18 @@ function Hero() {
           <span ref={el} className="headline"></span>
         </p>
         <div className="contact-icons" id="about">
-          <Icon className="icon" path={mdiEmail} size={1.7} />
-          <Icon className="icon" path={mdiGithub} size={1.7} />
-          <Icon className="icon" path={mdiLinkedin} size={1.7} />
-          <Icon className="icon" path={mdiFacebook} size={1.7} />
+          <a href="mailto:rima.semetaite@gmail.com">
+            <Icon className="icon" path={mdiEmail} size={1.7} />
+          </a>
+          <a href="https://github.com/RimaSem" target="_blank">
+            <Icon className="icon" path={mdiGithub} size={1.7} />
+          </a>
+          <a href="https://www.linkedin.com/in/rima-semetaite/" target="_blank">
+            <Icon className="icon" path={mdiLinkedin} size={1.7} />
+          </a>
+          <a href="https://facebook.com/rimasemetaite" target="_blank">
+            <Icon className="icon" path={mdiFacebook} size={1.7} />
+          </a>
         </div>
       </div>
     </section>

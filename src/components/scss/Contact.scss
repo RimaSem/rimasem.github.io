@@ -104,17 +104,23 @@ h1 {
 
     .social-networks {
       padding: 1em;
+
       .icons {
         margin-top: 0.3em;
         display: flex;
         gap: 1.5em;
 
-        .social-icon {
-          cursor: pointer;
-          transition: color 0.3s;
+        a {
+          text-decoration: none;
+          color: rgb(68, 79, 90);
 
-          &:hover {
-            color: rgb(5, 100, 189);
+          .social-icon {
+            cursor: pointer;
+            transition: color 0.3s;
+
+            &:hover {
+              color: rgb(5, 100, 189);
+            }
           }
         }
       }

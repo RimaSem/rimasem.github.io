@@ -54,9 +54,18 @@ function Contact() {
           <div className="social-networks">
             <h3>Social Networks:</h3>
             <div className="icons">
-              <Icon className="social-icon" path={mdiGithub} size={1.3} />
-              <Icon className="social-icon" path={mdiFacebook} size={1.3} />
-              <Icon className="social-icon" path={mdiLinkedin} size={1.3} />
+              <a href="https://github.com/RimaSem" target="_blank">
+                <Icon className="social-icon" path={mdiGithub} size={1.3} />
+              </a>
+              <a href="https://facebook.com/rimasemetaite" target="_blank">
+                <Icon className="social-icon" path={mdiFacebook} size={1.3} />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/rima-semetaite/"
+                target="_blank"
+              >
+                <Icon className="social-icon" path={mdiLinkedin} size={1.3} />
+              </a>
             </div>
           </div>
         </div>

@@ -47,12 +47,17 @@
       gap: 1em;
       margin-top: 1.8em;
 
-      .icon {
-        cursor: pointer;
-        transition: color 0.3s;
+      a {
+        text-decoration: none;
+        color: rgb(68, 79, 90);
 
-        &:hover {
-          color: rgb(5, 100, 189);
+        .icon {
+          cursor: pointer;
+          transition: color 0.3s;
+
+          &:hover {
+            color: rgb(5, 100, 189);
+          }
         }
       }
     }
@@ -72,11 +77,11 @@
     }
 
     .hero-bottom-wrapper {
-      height: 180px;
+      height: 200px;
       width: 530px;
 
       .headline {
-        height: 86px;
+        height: 130px;
         font-size: 1.6rem;
       }
 
