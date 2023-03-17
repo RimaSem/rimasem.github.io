@@ -1,5 +1,4 @@
 import "./scss/Header.scss";
-import { Link } from "react-router-dom";
 import { useRef } from "react";
 
 function Header() {
@@ -21,7 +20,19 @@ function Header() {
             {"/>"}
           </h3>
         </a>
-        <div ref={slidingMenuRef} className="sliding-menu"></div>
+        <div ref={slidingMenuRef} className="sliding-menu">
+          <nav className="small-screen-nav">
+            <a id="about-link" href="#about">
+              About
+            </a>
+            <a id="projects-link" href="#projects">
+              Projects
+            </a>
+            <a id="contact-link" href="#contact">
+              Contact
+            </a>
+          </nav>
+        </div>
         <div
           ref={hamburgerIconRef}
           className="hamburger-icon"
