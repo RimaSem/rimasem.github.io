@@ -1,3 +1,5 @@
+@use "./../../variables";
+
 .about-container {
   overflow-x: hidden;
   max-width: 600px;
@@ -7,7 +9,7 @@
     padding: 0 1.1em;
 
     h1 {
-      font-family: Finger Paint, cursive;
+      font-family: variables.$secondary-font-family;
       text-align: center;
       margin: 0 0 2rem 0;
       font-size: 2.5rem;
@@ -24,7 +26,7 @@
     margin-top: 3em;
 
     h1 {
-      font-family: Finger Paint, cursive;
+      font-family: variables.$secondary-font-family;
       text-align: center;
       margin: 0 0 2rem 0;
       font-size: 2.5rem;
@@ -47,6 +49,7 @@
 
           img {
             height: 3em;
+            width: 3em;
           }
         }
       }

@@ -1,3 +1,5 @@
+@use "variables";
+
 * {
   box-sizing: border-box;
 }
@@ -7,11 +9,11 @@ html {
 
   body {
     margin: 0;
-    font-family: "Raleway", sans-serif;
+    font-family: variables.$main-font-family;
     #root {
       .App {
         margin: 0 auto;
-        color: rgb(68, 79, 90);
+        color: variables.$secondary-color;
       }
     }
   }

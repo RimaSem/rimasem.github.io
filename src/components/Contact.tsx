@@ -118,7 +118,7 @@ function Contact() {
         </form>
         <div className="contacts">
           <div className="contact-info">
-            <h3>Contact Info:</h3>
+            <h2>Contact Info:</h2>
             <div className="wrapper">
               <Icon className="contact-icon" path={mdiEmail} />
               <p>rima.semetaite@gmail.com</p>
@@ -133,17 +133,26 @@ function Contact() {
             </div>
           </div>
           <div className="social-networks">
-            <h3>Social Networks:</h3>
+            <h2>Social Networks:</h2>
             <div className="icons">
-              <a href="https://github.com/RimaSem" target="_blank">
+              <a
+                href="https://github.com/RimaSem"
+                target="_blank"
+                aria-label="GitHub"
+              >
                 <Icon className="social-icon" path={mdiGithub} size={1.3} />
               </a>
-              <a href="https://facebook.com/rimasemetaite" target="_blank">
+              <a
+                href="https://facebook.com/rimasemetaite"
+                target="_blank"
+                aria-label="Facebook"
+              >
                 <Icon className="social-icon" path={mdiFacebook} size={1.3} />
               </a>
               <a
                 href="https://www.linkedin.com/in/rima-semetaite/"
                 target="_blank"
+                aria-label="Linkedin"
               >
                 <Icon className="social-icon" path={mdiLinkedin} size={1.3} />
               </a>

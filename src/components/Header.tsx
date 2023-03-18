@@ -10,6 +10,14 @@ function Header() {
     slidingMenuRef.current?.classList.toggle("active");
   }
 
+  const nav = (
+    <>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </>
+  );
+
   return (
     <header>
       <div className="header-container">
@@ -21,17 +29,7 @@ function Header() {
           </h3>
         </a>
         <div ref={slidingMenuRef} className="sliding-menu">
-          <nav className="small-screen-nav">
-            <a id="about-link" href="#about">
-              About
-            </a>
-            <a id="projects-link" href="#projects">
-              Projects
-            </a>
-            <a id="contact-link" href="#contact">
-              Contact
-            </a>
-          </nav>
+          <nav className="small-screen-nav">{nav}</nav>
         </div>
         <div
           ref={hamburgerIconRef}
@@ -42,17 +40,7 @@ function Header() {
           <div className="ham-bar bar-mid"></div>
           <div className="ham-bar bar-bottom"></div>
         </div>
-        <nav className="wide-screen-nav">
-          <a id="about-link" href="#about">
-            About
-          </a>
-          <a id="projects-link" href="#projects">
-            Projects
-          </a>
-          <a id="contact-link" href="#contact">
-            Contact
-          </a>
-        </nav>
+        <nav className="wide-screen-nav">{nav}</nav>
       </div>
     </header>
   );

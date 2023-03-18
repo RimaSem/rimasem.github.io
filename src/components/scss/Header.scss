@@ -1,8 +1,10 @@
+@use "./../../variables";
+
 header {
   height: 3.1em;
   display: flex;
   justify-content: space-between;
-  background-color: white;
+  background-color: variables.$main-color;
   position: sticky;
   top: 0;
   right: 0;
@@ -25,7 +27,7 @@ header {
       h3 {
         margin: 0;
         font-weight: 300;
-        color: rgb(68, 79, 90);
+        color: variables.$secondary-color;
         min-width: fit-content;
       }
     }
@@ -35,7 +37,7 @@ header {
     }
 
     .sliding-menu {
-      background-color: white;
+      background-color: variables.$main-color;
       position: fixed;
       z-index: 1;
       height: 3.1em;
@@ -57,7 +59,7 @@ header {
 
         a {
           text-decoration: none;
-          color: rgb(68, 79, 90);
+          color: variables.$secondary-color;
           padding: 0.3em 0.3em;
         }
       }
@@ -84,7 +86,7 @@ header {
         z-index: 2;
         width: 70%;
         height: 2px;
-        background-color: rgb(68, 79, 90);
+        background-color: variables.$secondary-color;
         border-radius: 25px;
         position: absolute;
         top: 50%;
@@ -147,7 +149,7 @@ header {
 
         a {
           text-decoration: none;
-          color: rgb(68, 79, 90);
+          color: variables.$secondary-color;
           position: relative;
           padding: 0.3em 0.3em;
 

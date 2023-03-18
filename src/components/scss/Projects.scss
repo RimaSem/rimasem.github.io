@@ -1,9 +1,11 @@
+@use "./../../variables";
+
 .projects-container {
   margin: 0 auto;
   max-width: 1200px;
 
   h1 {
-    font-family: Finger Paint, cursive;
+    font-family: variables.$secondary-font-family;
     text-align: center;
     margin: 0 0 2rem 0;
     font-size: 2.5rem;
@@ -53,14 +55,14 @@
           font-size: 0.8rem;
           text-align: center;
           width: fit-content;
-          background-color: rgb(68, 79, 90);
-          color: white;
+          background-color: variables.$secondary-color;
+          color: variables.$main-color;
           padding: 0.4em 2em;
           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
           transition: background-color 0.3s;
 
           &:hover {
-            background-color: rgb(5, 100, 189);
+            background-color: variables.$accent-color;
           }
 
           &:active {

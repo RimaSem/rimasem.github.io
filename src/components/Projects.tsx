@@ -1,10 +1,10 @@
 import "./scss/Projects.scss";
-import ShopImg from "../img/plant-shop.jpg";
-import TodoImg from "../img/todo-list.jpg";
-import WeatherImg from "../img/weather-app.jpg";
-import MemoryGameImg from "../img/memory-game.jpg";
-import QuizzicalImg from "../img/quizzical.jpg";
-import CVBuilderImg from "../img/cv-builder.jpg";
+import ShopImg from "../img/plant-shop.webp";
+import TodoImg from "../img/todo-list.webp";
+import WeatherImg from "../img/weather-app.webp";
+import MemoryGameImg from "../img/memory-game.webp";
+import QuizzicalImg from "../img/quizzical.webp";
+import CVBuilderImg from "../img/cv-builder.webp";
 
 function Projects() {
   return (
