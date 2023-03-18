@@ -30,6 +30,10 @@ h1 {
         rgb(209, 213, 219) 0px 0px 0px 1px inset;
       transition: box-shadow 0.2s ease-in-out;
 
+      &:focus:valid {
+        box-shadow: rgba(5, 189, 66, 0.671) 0px 0px 0px 2px;
+      }
+
       &::placeholder {
         color: rgb(137, 136, 136);
       }
@@ -69,6 +73,19 @@ h1 {
       &:hover {
         opacity: 0.85;
       }
+    }
+
+    .error {
+      color: rgb(228, 2, 2);
+      font-size: 0.8rem;
+      font-weight: 500;
+      margin-top: -8px;
+    }
+
+    .success-message {
+      color: rgb(32, 127, 32);
+      font-weight: 500;
+      text-align: center;
     }
   }
   .contacts {
