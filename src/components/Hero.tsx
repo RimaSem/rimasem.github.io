@@ -21,7 +21,7 @@ function Hero() {
   return (
     <section className="hero">
       <p className="intro">Hello! 👋 My name is</p>
-      <h1>RIMA ŠEMETAITĖ</h1>
+      <h1>RIMA SEMETAITE</h1>
       <div className="hero-bottom-wrapper">
         <p>
           <span ref={el} className="headline"></span>
