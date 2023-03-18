@@ -33,10 +33,10 @@ function Contact() {
     if (currentForm?.checkValidity()) {
       emailjs
         .sendForm(
-          VITE_APP_SERVICE_ID,
-          VITE_APP_TEMPLATE_ID,
+          "service_2hem1gc",
+          "template_t0md5ms",
           currentForm,
-          VITE_APP_USER_ID
+          "-FWZuVUaVg83yduBr"
         )
         .then(
           (result) => {
