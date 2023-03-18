@@ -8,11 +8,6 @@ on:
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
-
-env:
-  VITE_APP_SERVICE_ID: ${{ vars.VITE_APP_SERVICE_ID }}
-  VITE_APP_TEMPLATE_ID: ${{ vars.VITE_APP_TEMPLATE_ID }}
-  VITE_APP_USER_ID: ${{ vars.VITE_APP_USER_ID }}
   
 # Sets the GITHUB_TOKEN permissions to allow deployment to GitHub Pages
 permissions:
