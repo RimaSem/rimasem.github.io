@@ -19,23 +19,30 @@ function About() {
       <div className="hidden about-wrapper">
         <h1>ABOUT ME</h1>
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum,
-          eligendi, odit commodi, quo totam tempora laboriosam unde eos beatae
-          tenetur perferendis temporibus a! Necessitatibus consequuntur tenetur
-          quaerat facilis dicta tempora.
+          I am a self-taught front-end web developer with a passion for creating
+          visually appealing, user-friendly, and efficient websites. My interest
+          in programming began as a hobby, which quickly turned into an
+          aspiration to pursue web development as a career. I am constantly
+          learning new things, expanding my skill set, and exploring different
+          technologies.
         </p>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum et
-          necessitatibus optio fugiat aspernatur recusandae dolore nisi pariatur
-          expedita quis maxime mollitia nulla officiis iste earum nobis eaque
-          omnis laudantium, aperiam id perspiciatis! Exercitationem.
+          Google ninja – my ability to quickly dig out information from the
+          deepest corners of the internet is basically my superpower at this
+          point. Whether it's a specific code snippet, documentation, a video,
+          or a meme - if it's somewhere out there on the interwebs, I will find
+          it!
         </p>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. In quam
-          soluta adipisci molestias atque aliquid tempora nemo quibusdam
-          inventore vel ullam debitis tempore nisi quisquam consequatur velit
-          veniam harum, aperiam corporis fuga! Doloribus minus aperiam nostrum
-          voluptatem, veritatis ipsum esse neque commodi?
+          Positive mindset enthusiast – I tend to focus on the good in any given
+          situation, and approach challenges or awkward situations in an
+          optimistic and productive way.
+        </p>
+        <p>
+          Time management whizz – properly planning things out ahead of time is
+          a lifestyle for me. I am pretty anal about being punctual, creating
+          todo-lists and schedules for myself, as well as finishing my tasks
+          within the set deadlines.
         </p>
       </div>
       <div className="hidden skills-wrapper">
