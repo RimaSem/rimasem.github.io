@@ -57,7 +57,7 @@ function About() {
       </div>
       <div className="hidden skills-wrapper">
         <h1>SKILLS</h1>
-        <div className="all-skills">
+        <div className="main-skills">
           <div className="col">
             <Skill img="TypeScript.svg" name="TypeScript" />
             <Skill img="JavaScript.svg" name="JavaScript" />
@@ -74,6 +74,16 @@ function About() {
             <Skill img="Git.svg" name="Git" />
             <Skill img="Github-Dark.svg" name="GitHub" />
           </div>
+        </div>
+        <h2 className="additional-skills-title">I am also familiar with:</h2>
+        <div className="additional-skills">
+          <img src="MySQL.svg" alt="MySQL" />
+          <img src="Java.svg" alt="Java" />
+          <img src="Spring.svg" alt="Spring" />
+          <img src="Python.svg" alt="Python" />
+          <img src="Django.svg" alt="Django" />
+          <img src="Jest.svg" alt="Jest" />
+          <img src="WebPack.svg" alt="Webpack" />
         </div>
       </div>
     </section>

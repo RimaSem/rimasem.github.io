@@ -33,13 +33,29 @@
       font-weight: 500;
     }
 
-    .all-skills {
+    .main-skills {
       display: flex;
       justify-content: space-evenly;
       flex-wrap: wrap;
 
       .col {
-        min-width: 137px;
+        min-width: 12.8125rem;
+      }
+    }
+
+    .additional-skills-title {
+      margin-top: 3em;
+      font-size: 1.1rem;
+      text-align: center;
+    }
+
+    .additional-skills {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      img {
+        margin: 0 0.5em 0.5em 0;
       }
     }
   }
