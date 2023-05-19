@@ -1,3 +1,4 @@
+import Skill from "./Skill";
 import "./scss/About.scss";
 import { useEffect } from "react";
 
@@ -19,79 +20,57 @@ function About() {
       <div className="hidden about-wrapper">
         <h1>ABOUT ME</h1>
         <p>
-          I am a self-taught front-end web developer with a passion for creating
-          visually appealing, user-friendly, and efficient websites. My interest
-          in programming began as a hobby, which quickly turned into an
-          aspiration to pursue web development as a career. I am constantly
-          learning new things, expanding my skill set, and exploring different
-          technologies.
+          I am a self-taught front-end developer who loves solving technical
+          challenges and is always excited to learn new things. My interest in
+          programming began as a hobby, which quickly turned into an aspiration
+          to pursue web development as a career. For the first time in my life,
+          I finally understand what it feels like to truly love your work
+          without counting the hours!
         </p>
         <p>
-          Google ninja – my ability to quickly dig out information from the
-          deepest corners of the internet is basically my superpower at this
+          <b>Eager and quick learner</b> – being self-taught and slightly
+          obsessed with improving my skills has its own perks, and the ability
+          to learn something new quickly is one of them. No explaining
+          documentation or hand-holding required here, just point me at what I
+          need to learn next and I will do the rest.
+        </p>
+        <p>
+          <b>Time management whizz</b> – one thing I learned from my 9 years of
+          being self-employed and working remotely is how to be a punctual and
+          accountable worker with iron discipline and strong time-management
+          skills. Working both independently and collaboratively is not a
+          problem for me.
+        </p>
+        <p>
+          <b>Positive mindset enthusiast</b> – I tend to focus on the good in
+          any given situation, however this does not mean that I am unrealistic,
+          I just have an optimistic perspective of life. There are no failures,
+          just opportunities to learn and grow.
+        </p>
+        <p>
+          <b>Google ninja</b> – my ability to quickly dig out information from
+          the deepest corners of the internet is basically my superpower at this
           point. Whether it's a specific code snippet, documentation, a video,
           or a meme - if it's somewhere out there on the interwebs, I will find
           it!
-        </p>
-        <p>
-          Positive mindset enthusiast – I tend to focus on the good in any given
-          situation, and approach challenges or awkward situations in an
-          optimistic and productive way.
-        </p>
-        <p>
-          Time management whizz – properly planning things out ahead of time is
-          a lifestyle for me. I am pretty anal about being punctual, creating
-          todo-lists and schedules for myself, as well as finishing my tasks
-          within the set deadlines.
         </p>
       </div>
       <div className="hidden skills-wrapper">
         <h1>SKILLS</h1>
         <div className="all-skills">
           <div className="col">
-            <div className="skill">
-              <img src="TypeScript.svg" alt="typescript" />
-              <span>TypeScript</span>
-            </div>
-            <div className="skill">
-              <img src="React-Dark.svg" alt="react" />
-              <span>React</span>
-            </div>
-            <div className="skill">
-              <img src="HTML.svg" alt="html" />
-              <span>HTML</span>
-            </div>
-            <div className="skill">
-              <img src="Vite-Dark.svg" alt="vite" />
-              <span>Vite</span>
-            </div>
-            <div className="skill">
-              <img src="Github-Dark.svg" alt="github" />
-              <span>GitHub</span>
-            </div>
+            <Skill img="TypeScript.svg" name="TypeScript" />
+            <Skill img="React-Dark.svg" name="React" />
+            <Skill img="HTML.svg" name="HTML" />
+            <Skill img="Vite-Dark.svg" name="Vite" />
+            <Skill img="Github-Dark.svg" name="GitHub" />
           </div>
-
           <div className="col">
-            <div className="skill">
-              <img src="JavaScript.svg" alt="javascript" />
-              <span>JavaScript</span>
-            </div>
-            <div className="skill">
-              <img src="CSS.svg" alt="css" />
-              <span>CSS</span>
-            </div>
-            <div className="skill">
-              <img src="Sass.svg" alt="sass" />
-              <span>SASS/SCSS</span>
-            </div>
-            <div className="skill">
-              <img src="Git.svg" alt="git" />
-              <span>Git</span>
-            </div>
-            <div className="skill">
-              <img src="VSCode-Dark.svg" alt="vs code" />
-              <span>VS Code</span>
-            </div>
+            <Skill img="JavaScript.svg" name="JavaScript" />
+            <Skill img="CSS.svg" name="CSS" />
+            <Skill img="Sass.svg" name="SASS/SCSS" />
+            <Skill img="Git.svg" name="Git" />
+            <Skill img="VSCode-Dark.svg" name="VS Code" />
           </div>
         </div>
       </div>

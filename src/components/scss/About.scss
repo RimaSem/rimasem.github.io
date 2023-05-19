@@ -59,27 +59,23 @@
 
 .about-wrapper.hidden {
   opacity: 0;
-  // filter: blur(5px);
   transform: translateX(-100%);
   transition: transform 1s ease;
 }
 
 .about-wrapper.hidden.show {
   opacity: 1;
-  // filter: blur(0);
   transform: translateX(0);
 }
 
 .skills-wrapper.hidden {
   opacity: 0;
-  // filter: blur(5px);
   transform: translateX(100%);
   transition: transform 1s ease;
 }
 
 .skills-wrapper.show {
   opacity: 1;
-  // filter: blur(0);
   transform: translateX(0);
 }
 
