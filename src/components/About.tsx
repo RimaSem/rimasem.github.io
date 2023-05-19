@@ -60,17 +60,19 @@ function About() {
         <div className="all-skills">
           <div className="col">
             <Skill img="TypeScript.svg" name="TypeScript" />
+            <Skill img="JavaScript.svg" name="JavaScript" />
             <Skill img="React-Dark.svg" name="React" />
-            <Skill img="HTML.svg" name="HTML" />
+            <Skill img="Redux.svg" name="Redux" />
+            <Skill img="Firebase-Dark.svg" name="Firebase" />
             <Skill img="Vite-Dark.svg" name="Vite" />
-            <Skill img="Github-Dark.svg" name="GitHub" />
           </div>
           <div className="col">
-            <Skill img="JavaScript.svg" name="JavaScript" />
+            <Skill img="HTML.svg" name="HTML" />
             <Skill img="CSS.svg" name="CSS" />
             <Skill img="Sass.svg" name="SASS/SCSS" />
+            <Skill img="StyledComponents.svg" name="Styled-components" />
             <Skill img="Git.svg" name="Git" />
-            <Skill img="VSCode-Dark.svg" name="VS Code" />
+            <Skill img="Github-Dark.svg" name="GitHub" />
           </div>
         </div>
       </div>
