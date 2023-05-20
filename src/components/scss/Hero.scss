@@ -1,26 +1,26 @@
-@use "./../../variables";
+@use "./../../style/variables" as v;
 
 .hero {
-  height: calc(100vh - 47.8px);
-  padding: 6em 0;
   display: flex;
   flex-direction: column;
-  text-align: center;
   justify-content: center;
   align-items: center;
-  color: variables.$secondary-color;
   gap: 1.5em;
+  height: calc(100vh - 47.8px);
+  padding: 6em 0;
+  color: v.$secondary-color;
+  text-align: center;
 
   .intro {
-    font-size: 1.5rem;
     margin: 0;
     width: 330px;
+    font-size: 1.5rem;
   }
 
   h1 {
     margin: 0;
-    font-family: variables.$secondary-font-family;
     font-size: 4rem;
+    font-family: v.$secondary-font-family;
     line-height: 1;
   }
 
@@ -32,14 +32,14 @@
     height: 170px;
 
     .headline {
-      line-height: 1.4;
       font-size: 1.3rem;
-      color: variables.$accent-color;
+      color: v.$accent-color;
+      line-height: 1.4;
     }
 
     .typed-cursor {
       font-size: 1.3rem;
-      color: variables.$accent-color;
+      color: v.$accent-color;
     }
 
     .contact-icons {
@@ -49,15 +49,15 @@
       margin-top: 1.8em;
 
       a {
+        color: v.$secondary-color;
         text-decoration: none;
-        color: variables.$secondary-color;
 
         .icon {
-          cursor: pointer;
           transition: color 0.3s;
+          cursor: pointer;
 
           &:hover {
-            color: variables.$accent-color;
+            color: v.$accent-color;
           }
         }
       }

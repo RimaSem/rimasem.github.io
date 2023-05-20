@@ -1,36 +1,32 @@
-@use "./../../variables";
+@use "./../../style/variables" as v;
+@use "./../../style/mixins" as m;
 
 h1 {
-  font-family: variables.$secondary-font-family;
-  text-align: center;
+  @include m.h1-style;
   margin: 2em 0 0.7em 0;
-  font-size: 2.5rem;
-  font-weight: 500;
 }
 
 .contact-container {
-  margin: 0 auto;
-  max-width: 1200px;
-  margin-bottom: 3em;
+  margin: 0 auto 3em auto;
+  max-width: v.$container-width-max;
 
   form {
     display: flex;
     flex-direction: column;
     gap: 0.8em;
-    margin: 0 auto;
-    margin-bottom: 3em;
+    margin: 0 auto 3em auto;
     width: clamp(120px, 95%, 640px);
 
     input,
     textarea {
-      font-size: 1rem;
-      padding: 0.5em;
-      border-radius: 3px;
-      font-family: inherit;
-      border: none;
+      transition: box-shadow 0.2s ease-in-out;
       box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
         rgb(209, 213, 219) 0px 0px 0px 1px inset;
-      transition: box-shadow 0.2s ease-in-out;
+      border: none;
+      border-radius: 3px;
+      padding: 0.5em;
+      font-size: 1rem;
+      font-family: inherit;
 
       &:focus:valid {
         box-shadow: rgba(5, 189, 66, 0.671) 0px 0px 0px 2px;
@@ -42,14 +38,13 @@ h1 {
 
       &:focus {
         outline: none;
-        box-shadow: variables.$accent-color 0px 0px 0px 1px;
+        box-shadow: v.$accent-color 0px 0px 0px 1px;
       }
     }
 
     input {
       height: 2.5em;
-      padding-top: 0.2em;
-      padding-bottom: 0.2em;
+      padding-top: 0.2em 0 0.2em 0;
     }
 
     textarea {
@@ -60,17 +55,17 @@ h1 {
     }
 
     button {
-      font-family: inherit;
-      font-size: 1rem;
-      color: variables.$main-color;
-      background-color: variables.$accent-color;
+      transition: opacity 0.3s;
       border: none;
       border-radius: 3px;
+      margin: 0.3em auto 0 auto;
       padding: 0.5em 1.5em;
       width: fit-content;
-      margin: 0.3em auto 0 auto;
+      color: v.$main-color;
+      font-size: 1rem;
+      font-family: inherit;
+      background-color: v.$accent-color;
       cursor: pointer;
-      transition: opacity 0.3s;
 
       &:hover {
         opacity: 0.85;
@@ -78,24 +73,24 @@ h1 {
     }
 
     .error {
-      color: rgb(228, 2, 2);
+      margin-top: -8px;
+      color: v.$error-message-color;
       font-size: 0.8rem;
       font-weight: 500;
-      margin-top: -8px;
     }
 
     .success-message {
-      color: rgb(32, 127, 32);
+      color: v.$success-message-color;
       font-weight: 500;
       text-align: center;
     }
   }
   .contacts {
-    max-width: 640px;
-    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin: 0 auto;
+    max-width: 640px;
     line-height: 2.3;
 
     h2 {
@@ -126,20 +121,20 @@ h1 {
       padding: 1em;
 
       .icons {
-        margin-top: 0.3em;
         display: flex;
         gap: 1.5em;
+        margin-top: 0.3em;
 
         a {
+          color: v.$secondary-color;
           text-decoration: none;
-          color: variables.$secondary-color;
 
           .social-icon {
-            cursor: pointer;
             transition: color 0.3s;
+            cursor: pointer;
 
             &:hover {
-              color: variables.$accent-color;
+              color: v.$accent-color;
             }
           }
         }
@@ -150,9 +145,9 @@ h1 {
 
 @media screen and (min-width: 1000px) {
   .contact-container {
-    max-width: 1000px;
     display: flex;
     justify-content: center;
+    max-width: 1000px;
 
     form {
       padding: 2em;
