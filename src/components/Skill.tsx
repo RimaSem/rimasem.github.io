@@ -5,13 +5,11 @@ interface SkillProps {
   name: string;
 }
 
-function Skill({ img, name }: SkillProps) {
-  return (
-    <div className="skill">
-      <img src={img} alt={name} />
-      <span>{name}</span>
-    </div>
-  );
-}
+const Skill: React.FC<SkillProps> = ({ img, name }) => (
+  <div className="skill">
+    <img src={img} alt={name} />
+    <span>{name}</span>
+  </div>
+);
 
 export default Skill;

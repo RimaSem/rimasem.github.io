@@ -11,7 +11,7 @@ import {
   mdiMapMarker,
 } from "@mdi/js";
 
-function Contact() {
+const Contact: React.FC = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -21,11 +21,10 @@ function Contact() {
   const form = useRef<HTMLFormElement | null>(null);
   const nameInput = useRef<HTMLInputElement | null>(null);
 
-  function isValidEmail(email: string) {
-    return /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/.test(email);
-  }
+  const isValidEmail = (email: string) =>
+    /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/.test(email);
 
-  function handleSubmit(e: SyntheticEvent) {
+  const handleSubmit = (e: SyntheticEvent) => {
     e.preventDefault();
     setIsClicked(true);
     const currentForm = form.current;
@@ -56,7 +55,7 @@ function Contact() {
     } else {
       setMessageSent(false);
     }
-  }
+  };
 
   return (
     <>
@@ -162,6 +161,6 @@ function Contact() {
       </section>
     </>
   );
-}
+};
 
 export default Contact;
