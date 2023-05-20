@@ -1,6 +1,12 @@
 $main-color: rgb(255, 255, 255);
 $secondary-color: rgb(68, 79, 90);
 $accent-color: rgb(5, 100, 189);
+$error-message-color: rgb(228, 2, 2);
+$success-message-color: rgb(32, 127, 32);
 
 $main-font-family: "Raleway", sans-serif;
 $secondary-font-family: "Barrio", cursive;
+
+$container-width-max: 1200px;
+
+$box-shadow-main: rgba(0, 0, 0, 0.24) 0px 3px 8px;

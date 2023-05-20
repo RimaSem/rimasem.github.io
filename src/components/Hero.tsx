@@ -4,7 +4,7 @@ import { useRef, useEffect } from "react";
 import { Icon } from "@mdi/react";
 import { mdiEmail, mdiGithub, mdiLinkedin, mdiFacebook } from "@mdi/js";
 
-function Hero() {
+const Hero: React.FC = () => {
   const el = useRef(null);
 
   useEffect(() => {
@@ -55,6 +55,6 @@ function Hero() {
       </div>
     </section>
   );
-}
+};
 
 export default Hero;

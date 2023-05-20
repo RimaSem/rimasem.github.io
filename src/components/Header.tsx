@@ -1,14 +1,14 @@
 import "./scss/Header.scss";
 import { useRef } from "react";
 
-function Header() {
+const Header: React.FC = () => {
   const hamburgerIconRef = useRef<HTMLDivElement>(null);
   const slidingMenuRef = useRef<HTMLDivElement>(null);
 
-  function displayMenu() {
+  const displayMenu = () => {
     hamburgerIconRef.current?.classList.toggle("active");
     slidingMenuRef.current?.classList.toggle("active");
-  }
+  };
 
   const nav = (
     <>
@@ -44,6 +44,6 @@ function Header() {
       </div>
     </header>
   );
-}
+};
 
 export default Header;

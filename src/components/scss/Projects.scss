@@ -1,68 +1,65 @@
-@use "./../../variables";
+@use "./../../style/variables" as v;
+@use "./../../style/mixins" as m;
 
 .projects-container {
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: v.$container-width-max;
 
   h1 {
-    font-family: variables.$secondary-font-family;
-    text-align: center;
-    margin: 0 0 2rem 0;
-    font-size: 2.5rem;
-    font-weight: 500;
+    @include m.h1-style;
   }
 
   .project-wrapper {
-    margin-bottom: 2em;
     display: flex;
     justify-content: center;
     gap: 1.3em;
     flex-wrap: wrap;
+    margin-bottom: 2em;
 
     .project {
-      max-width: 350px;
-      padding: 1.1em;
-      margin-bottom: 1.5em;
-      border-radius: 5px;
-      background-color: rgba(68, 79, 90, 0.15);
-      width: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
+      border-radius: 5px;
+      margin-bottom: 1.5em;
+      padding: 1.1em;
+      max-width: 350px;
+      width: 100%;
+      background-color: rgba(68, 79, 90, 0.15);
 
       p {
         margin: 0 0 0.8em 0;
-        text-align: center;
         font-weight: 700;
+        text-align: center;
       }
 
       img {
+        box-shadow: v.$box-shadow-main;
+        border-radius: 5px;
         width: clamp(10px, 100%, 350px);
         height: 13.5em;
         object-fit: cover;
-        border-radius: 5px;
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
       }
 
       .link-wrapper {
-        width: 100%;
-        margin-top: 0.8em;
         display: flex;
         justify-content: space-evenly;
+        margin-top: 0.8em;
+        width: 100%;
 
         a {
-          text-decoration: none;
-          font-size: 0.8rem;
-          text-align: center;
-          width: fit-content;
-          background-color: variables.$secondary-color;
-          color: variables.$main-color;
-          padding: 0.4em 2em;
-          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
           transition: background-color 0.3s;
+          box-shadow: v.$box-shadow-main;
+          padding: 0.4em 2em;
+          width: fit-content;
+          background-color: v.$secondary-color;
+          font-size: 0.8rem;
+          color: v.$main-color;
+          text-decoration: none;
+          text-align: center;
 
           &:hover {
-            background-color: variables.$accent-color;
+            background-color: v.$accent-color;
           }
 
           &:active {

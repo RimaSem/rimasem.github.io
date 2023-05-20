@@ -2,7 +2,7 @@ import Skill from "./Skill";
 import "./scss/About.scss";
 import { useEffect } from "react";
 
-function About() {
+const About: React.FC = () => {
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
@@ -88,6 +88,6 @@ function About() {
       </div>
     </section>
   );
-}
+};
 
 export default About;
