@@ -84,6 +84,7 @@ const About: React.FC = () => {
           <img src="Django.svg" alt="Django" />
           <img src="Jest.svg" alt="Jest" />
           <img src="WebPack.svg" alt="Webpack" />
+          <img src="Tailwind.svg" alt="Tailwind" />
         </div>
       </div>
     </section>
